@@ -48,5 +48,5 @@ set backspace=indent,eol,start
 set ruler
 set showmatch
 set cursorline
-
+set belloff=all
 
