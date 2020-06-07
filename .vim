@@ -1,1 +1,0 @@
-/mnt/c/Users/9549h/workspace/.vim
