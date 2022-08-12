@@ -1,0 +1,169 @@
+{
+    "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "vscode-icons",
+    "diffEditor.renderSideBySide": false, // Git の差分を行内に表示
+    "editor.colorDecorators": false, // カラーデコレーターを非表示
+    "editor.formatOnPaste": true, // ペースト時に自動でフォーマット
+    "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+    "editor.formatOnType": true, // 入力した行を自動でフォーマット
+    "editor.minimap.renderCharacters": false, // ミニマップの表示文字をブロックに変更
+    "editor.minimap.showSlider": "always", // 表示領域をミニマップで常にハイライト
+    "editor.multiCursorModifier": "ctrlCmd", // マウスでの複数選択時の修飾キーを変更
+    "editor.renderControlCharacters": true, // 制御文字を表示
+    "editor.renderLineHighlight": "all", // 選択行を行番号含めすべてハイライト
+    "editor.renderWhitespace": "all", // 半角スペースを常に表示
+    "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
+    "editor.tabSize": 4, // タブのサイズ変更
+    "editor.wordWrap": "on", // エディターの幅で折り返し
+    "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+    "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+    "emmet.variables": {
+        // Emmet で展開される HTML の言語を変更
+        "lang": "ja"
+    },
+    "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+    "files.associations": {
+        // ファイルと言語の関連付けを変更
+        ".*lintrc": "json"
+    },
+    "files.exclude": {
+        // エクスプローラーから非表示にするファイル
+        "**/*.map": true,
+        "**/node_modules": true
+    },
+    "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+    "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+    "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+    },
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+    "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+    "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+    "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+    "search.exclude": {
+        // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+        "**/tmp": true
+    },
+    "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
+    "window.title": "${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
+    "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+    "workbench.editor.tabSizing": "shrink", // タブの表示設定
+    "workbench.startupEditor": "none",
+    "C_Cpp.updateChannel": "Insiders",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "ptex2pdf",
+            "tools": [
+                "ptex2pdf" //タイプセットに使うtoolの名前
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        //タイプセットに使うtool一覧
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "ptex2pdf", //ptex2pdf自体の設定はこれまでと一緒
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "typescript.tsc.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "backgroundCover.randomImageFolder": "c:\\Users\\9549h\\OneDrive\\Documents",
+    "backgroundCover.imagePath": "c:\\Users\\9549h\\OneDrive\\Documents\\vim-shortcuts-blue-1920x1200.png",
+    "backgroundCover.opacity": 0.9,
+    "cmake.configureOnOpen": true,
+    "vim.useSystemClipboard": true,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    // "vim.enableNeovim": true,
+    // 100文字を超える行は折り返して表示する
+    "editor.wordWrapColumn": 100,
+    // 左端の行番号にカーソル位置からの距離を表示
+    "editor.lineNumbers": "relative",
+    // minimapは表示しない
+    "editor.minimap.enabled": false,
+    // カーソル移動をNERDTreeと同じかんじに
+    "workbench.list.keyboardNavigation": "simple",
+    // ファイルプレビューは無効化(開かれたファイルタブを永続化)
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    // macrosプラグインを使って、ファイルを開くと同時にサイドバーを閉じるコマンドを登録
+    "macros": {
+        "selectAndToggleSidebar": [
+            "list.select",
+            "workbench.action.toggleSidebarVisibility"
+        ]
+    },
+    // "vim.handleKeys": {
+    //       "<C-v>": false,
+    // },
+    // "vim.insertModeKeyBindings": [
+    //   {
+    //     "before": ["ctrl+j"],
+    //      "after": ["<Esc>"]
+    //   }
+    // ],
+    "vim.statusBarColorControl": false,
+    "bracketPairColorizer.timeOut": 800,
+    "git.suggestSmartCommit": false,
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/obuchi/.config/nvim/init.vim",
+    "vscode-neovim.useCtrlKeysForNormalMode": true,
+    // "editor.bracketPairColorization.enabled": true,
+    // "editor.guides.bracketPairs": "active",
+    "editor.quickSuggestionsDelay": 100,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[rust]": {
+        "editor.formatOnSave": true
+    },
+    "rust-analyzer.cargo.allFeatures": true,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.checkOnSave.extraArgs": [
+        "--",
+        "-A",
+        "clippy::needless_return"
+    ],
+    "rust-analyzer.completion.autoimport.enable": true,
+    "rust-analyzer.completion.callable.snippets": "fill_arguments",
+    "rust-analyzer.completion.autoself.enable": true,
+    "rust-analyzer.completion.postfix.enable": true,
+}
